@@ -1,0 +1,20 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "unittest": "echo \"Running: Unit test\"",
+		"integrationtest": "echo \"Running: Integration test\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HammadAzeem25/node-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HammadAzeem25/node-app/issues"
+  },
+  "homepage": "https://github.com/HammadAzeem25/node-app#readme"
+}

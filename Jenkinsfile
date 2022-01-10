@@ -1,11 +1,6 @@
 pipeline {
     agent any
     stages {
-        stage('build') {
-            steps {
-                sh 'node --version'
-            }
-        }
 stage('Checkout SCM') {
             steps {
                 checkout([
@@ -17,5 +12,15 @@ stage('Checkout SCM') {
                  ]]
                 ])
             }
-        }}
+        }
+				stage('IntegrationTests') {
+				 steps {
+				        sh 'npm run unittest'
+								}}
+				stage('Integrationtest')
+				{
+             steps {
+             sh 'npm run integrationtest'
+				}
+				}}
 				}
